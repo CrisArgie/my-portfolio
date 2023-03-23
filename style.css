@@ -187,7 +187,7 @@ body::-webkit-scrollbar {
   z-index: -1;
 }
 .big-card:nth-child(1) {
-  background-image: url('../images/me.jpg');
+  background-image: url('images/me.jpg');
   background-size: cover;
   background-position: center;
 
