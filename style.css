@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
   width: 33rem;
   height: 43rem;
 
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0);
   /* position: absolute; */
 }
 .wrapper .big-card {
@@ -175,17 +175,22 @@ body::-webkit-scrollbar {
   left: 50%;
   top: 50%;
 
+  /* opacity: 0%; */
+  
   transform: translate(-50%, -50%);
-  transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in;
   z-index: -1;
 }
 .wrapper .hero-image:hover .little-card:nth-child(2) {
+  opacity: 100%;
   transform: translate(-220%, -240%) rotate(15deg);
 }
 .wrapper .hero-image:hover .little-card:nth-child(3) {
+  opacity: 100%;
   transform: translate(-260%, -90%) rotate(-4deg);
 }
 .wrapper .hero-image:hover .little-card:nth-child(4) {
+  opacity: 100%;
   transform: translate(-240%, 70%) rotate(-10deg);
 }
 .big-card {
@@ -196,44 +201,7 @@ body::-webkit-scrollbar {
   transform: translateX(-10%) rotate(-2.5deg);
 }
 
-/* .col-1 {
-  width: 8.33%;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-5 {
-  width: 41.66%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.33%;
-}
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
-  width: 100%;
-} */
-
-
+/* MAIN CONTENTS */
 
 .main-wrapper {
   color: black;
