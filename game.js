@@ -4,7 +4,7 @@ let score = 0;
 let currentQuestionIndex = 0;
 
 let lengthOfQuestion;
-let correctAnsweredScore;
+let correctAnsweredScore = 0;
 
 // Function to fetch and parse JSON
 async function fetchData() {
@@ -56,7 +56,7 @@ function displayFinalScore() {
   const finalScoreElement = document.getElementById('finalScore');
   const playAgainBtn = document.getElementById('playAgainBtn');
 
-  finalScoreElement.textContent = 'Final Score: ' + score + '>' + correctAnsweredScore + '/' + lengthOfQuestion;
+  finalScoreElement.textContent = 'Final Score: ' + score + ' >> ' + correctAnsweredScore + '/' + lengthOfQuestion;
   overlay.classList.remove('hidden');
 
   // Add event listener to play again button
