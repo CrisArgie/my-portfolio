@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "questionText": "How many Infinity Stones are there?",
+      "options": ["3", "5", "6", "7"],
+      "correctOption": 2
+    },
+    {
+      "questionText": "What is the most visited tourist attraction in the world?",
+      "options": ["Eiffel Tower", "Statue of Liberty", "Great Wall of China", "Colosseum"],
+      "correctOption": 0
+    },
+    {
+      "questionText": "What is the only food that cannot go bad?",
+      "options": ["Dark chocolate", "Peanut butter", "Canned tuna", "Honey"],
+      "correctOption": 3
+    },
+    {
+      "questionText": "What’s the heaviest organ in the human body?",
+      "options": ["Brain", "Liver", "Skin", "Heart"],
+      "correctOption": 1
+    },
+    {
+      "questionText": "What element does the chemical symbol Au stand for?",
+      "options": ["Silver", "Magnesium", "Salt", "Gold"],
+      "correctOption": 3
+    },
+    {
+      "questionText": "Which Avenger other than Captain America was able to pick up Thor’s Mjolnir in the Marvel movies?",
+      "options": ["Wanda", "Spiderman", "Doctor Strange", "Vision"],
+      "correctOption": 3
+    },
+    {
+      "questionText": "The first vaccine was for which disease?",
+      "options": ["Chickenpox", "Polio", "Measles", "Smallpox"],
+      "correctOption": 3
+    },
+    {
+      "questionText": "Aries, Sagittarius, and Leo are three zodiac signs in which triplicity",
+      "options": ["Air", "Water", "Fire", "Earth"],
+      "correctOption": 2
+    },
+    {
+      "questionText": "The villains in the 2007 version of the movie 'Transformers' are known as what?",
+      "options": ["Decepticons", "Storm Troopers", "Death Eaters", "Sentinels"],
+      "correctOption": 0
+    },
+    {
+      "questionText": "What is Rick's last name in 'Rick and Morty'?",
+      "options": ["Smith", "Sanchez", "Guetterman", "Noopers"],
+      "correctOption": 1
+    }
+  ]
+}

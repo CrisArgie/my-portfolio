@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bulma CSS design -->
+   <link rel="stylesheet" href="/bulma/css/bulma-rtl.min.css">
+
+   <!-- My custom setups -->
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="icon" href="/images/my_logo.png" type="image/icon type">
+   <title> My quiz app game </title>
+
+   <style>
+      #overlay {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      #overlay-content {
+         text-align: center;
+         background-color: white;
+         padding: 20px;
+         border-radius: 10px;
+      }
+
+      .hidden {
+         display: none !important;
+      }
+   </style>
+</head>
+
+<body>
+   <section class="hero is-fullheight"
+      style="background-image: linear-gradient(to right top, #c5fffd, #baf8f8, #aef1f4, #a3eaef, #97e3eb, #8fd9e8, #88d0e4, #83c6df, #84b7d7, #86a8cc, #8999be, #8b8bae);">
+      <!-- Hero head: will stick at the top -->
+      <!-- <div class="hero-head">
+         <header class="navbar">
+            <div class="container is-justify-content-end">
+               <nav class="navbar" role="navigation" aria-label="main navigation">
+                  <div id="navbarBasicExample" class="navbar-menu">
+                     <div class="navbar-end">
+                        <div class="navbar-item">
+                           <div class="buttons are-small" style="gap: 1.5rem">
+                              <a class="button is-dark">
+                                 Log in
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </header>
+      </div> -->
+      <div class="mx-5 my-4">
+         <div class="buttons are-small">
+            <a href="/" class="button is-dark">
+               Return
+            </a>
+         </div>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+         <div class="container has-text-centered" id="quiz-container">
+            <p class="title" id="questionText"><!-- QUESTIONS CONTAINER --></p>
+            <div class="columns is-multiline is-mobile" id="choicesContainer"></div>
+         </div>
+      </div>
+   </section>
+   <div id="overlay" class="hidden">
+      <div id="overlay-content">
+         <h1 class="title">Game Over</h1>
+         <p id="finalScore" class="subtitle py-2">Final Score: 0</p>
+         <button id="playAgainBtn" class="button is-info is-dark is-responsive">Play Again</button>
+      </div>
+   </div>
+</body>
+
+<script src="game.js"></script>
+
+</html>
