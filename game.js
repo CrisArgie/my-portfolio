@@ -3,6 +3,9 @@ let quizData = [];
 let score = 0;
 let currentQuestionIndex = 0;
 
+let lengthOfQuestion;
+let correctAnsweredScore;
+
 // Function to fetch and parse JSON
 async function fetchData() {
   try {
@@ -53,7 +56,7 @@ function displayFinalScore() {
   const finalScoreElement = document.getElementById('finalScore');
   const playAgainBtn = document.getElementById('playAgainBtn');
 
-  finalScoreElement.textContent = 'Final Score: ' + score;
+  finalScoreElement.textContent = 'Final Score: ' + score + '>' + correctAnsweredScore + '/' + lengthOfQuestion;
   overlay.classList.remove('hidden');
 
   // Add event listener to play again button
@@ -75,10 +78,13 @@ function handleChoiceSelection(index) {
   // Check if the selected choice is correct
   if (index === question.correctOption) {
     score = score + 5;
-    console.log('Correct!');
+    correctAnsweredScore++;
+    // console.log('Correct!');
   } else {
-    console.log('Incorrect!');
+    // console.log('Incorrect!');
   }
+
+  lengthOfQuestion = quizData.questions.length;
 
   // Move to the next question or display the final score
   currentQuestionIndex++;
@@ -92,7 +98,7 @@ function handleChoiceSelection(index) {
   }
 
   // Log the current score
-  console.log('SCORE: ' + score);
+  // console.log('SCORE: ' + score);
 }
 
 // Call the function to display the initial question
